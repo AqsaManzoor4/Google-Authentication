@@ -1,8 +1,53 @@
 body {    
-    background-image: url('https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1409.jpg?semt=ais_hybrid&w=740');
-    background-size: cover;   /* This makes the image cover the full page */
-    background-position: center; /* This centers the image */
-    background-repeat: no-repeat; /* This stops the image from repeating */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu7pi9_sQYmcQqb_GBixa6_qsebOpR5LVZsg&s'); /* Background image */
+  background-size: cover;   /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the image fixed during scrolling */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  
+  font-family: Arial, sans-serif; 
+  display: flex;   
+  justify-content: center;     
+  align-items: center;    
+  height: 100vh;     
+  margin: 0;    
+}
+
+
+
+/* body {    
+  background-color: #131313; 
+  
+  font-family: Arial, sans-serif; 
+  display: flex;   
+  justify-content: center;     
+  align-items: center;    
+  height: 100vh;     
+  margin: 0;    
+} */
+
+/* body {    
+  background: 
+      linear-gradient(rgba(6, 5, 5, 0.25), rgba(250, 246, 246, 0.25)),  
+      #f0f0f0; 
+  background-size: cover;   
+  background-position: center; 
+  background-repeat: no-repeat; 
+  
+  font-family: Arial, sans-serif; 
+  display: flex;   
+  justify-content: center;     
+  align-items: center;    
+  height: 100vh;     
+  margin: 0;    
+} */
+
+
+/* body {    
+    background-image: url('https://t4.ftcdn.net/jpg/07/05/56/21/360_F_705562152_WFSrWPNw6TqrxQ3MJzWzaZ1oeH3jLtUu.jpg');
+    background-size: cover;   
+    background-position: center; 
+    background-repeat: no-repeat; 
   
 font-family: Arial, sans-serif; 
 display: flex;   
@@ -10,25 +55,33 @@ justify-content: center;
 align-items: center;    
 height: 100vh;     
 margin: 0;    
-    }   
+    }    */
  #auth-container, #welcome-page {    
-background:#3d3d3b;
+background:#3b3b3a;
 padding: 2rem;    
 border-radius: 8px;  
 box-shadow: 0 4px 6px rgba(7, 110, 189, 0.1);     
 width: 300px;     
 text-align: center;   
  }   
- #auth-container{
+ #auth-container {
+  background: 
+    linear-gradient(rgba(49, 47, 47, 0.25), rgba(250, 246, 246, 0.25)), 
+    #7a7979; /* Background color */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ /* #auth-container{
 
     background: 
-      linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), 
-      url('https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1409.jpg?semt=ais_hybrid&w=740');
+      linear-gradient(rgba(239, 233, 233, 0.25), rgba(250, 246, 246, 0.25)), 
+      url('https://t4.ftcdn.net/jpg/07/05/56/21/360_F_705562152_WFSrWPNw6TqrxQ3MJzWzaZ1oeH3jLtUu.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  
- }
+ } */
  input, button {
   padding: 0.5rem;           
   border: 1px solid #090909;  
@@ -51,7 +104,7 @@ button {
   cursor: pointer;
 }
 
- /* input {      
+ input {      
 padding: 0.5rem;  
 border: 1px solid #090909;      
 border-radius: 4px;     
@@ -66,9 +119,9 @@ background-color: #f6f1f7;
  color: rgb(8, 7, 7);     
 cursor: pointer;    
  width: 100%;  
-  }        */
+  }       
 button:hover {      
-background-color: #323534;  
+background-color: rgb(36, 84, 36);  
   }      
  a {      
 color: #095b88;      
@@ -78,5 +131,5 @@ text-decoration: none;
   text-decoration: underline;  
   }  
   #auth-container:hover{
-    background-color: #747274;
+    background-color: #413e41;
   }

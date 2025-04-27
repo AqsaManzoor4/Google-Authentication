@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Management Board</title>
+  <link rel="stylesheet" href="./stylez.css">
+  <script type="module" src="./app.js" defer></script>
+</head>
+<body>
+  
+  <div class="header">
+    <h1>📝 My Task Manager</h1>
+  </div>
+
+  <div class="image-slider">
+    <div class="slides">
+      <!-- Slide 1 -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQARIFoAZ-lYRPR55Ca627_1ObUV5A5Y4NCFiystKbewmX4uP_DNH2MeAIP1vZ_SHvNMY8&usqp=CAU" alt="Slide 1">
+      <!-- Slide 2 -->
+      <img src="https://thumbs.dreamstime.com/b/assignment-word-cloud-concept-grey-background-90878926.jpg" alt="Slide 2">
+      <!-- Slide 3 -->
+      <img src="https://thumbs.dreamstime.com/b/deep-learning-word-cloud-hand-marker-concept-white-background-135859742.jpg" alt="Slide 3">
+    </div>
+  </div>
+  <div class="container">
+    <!-- To Do Column -->
+    <div class="column" id="todo-column">
+      <h2>To Do</h2>
+      <div id="todo-tasks"></div>
+      <button class="create-btn" id="create-task-btn">+ Create Task</button>
+    </div>
+
+    <!-- In Progress Column -->
+    <div class="column" id="in-progress-column">
+      <h2>In Progress</h2>
+      <div id="in-progress-tasks"></div>
+    </div>
+
+    <!-- Done Column -->
+    <div class="column" id="done-column">
+      <h2>Done</h2>
+      <div id="done-tasks"></div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="task-modal" class="modal">
+    <div class="modal-content">
+      <h2>Create / Edit Task</h2>
+      <input type="text" id="task-title" placeholder="Task Title" required />
+      <textarea id="task-description" placeholder="Task Description"></textarea>
+      <input type="text" id="task-assigned" placeholder="Assigned To" />
+      <input type="date" id="task-due-date" placeholder="Due Date" />
+      <button class="save-btn" id="save-task-btn">Save</button>
+      <button class="close-btn" id="close-modal-btn">Close</button>
+    </div>
+  </div>
+</body>
+</html>

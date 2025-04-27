@@ -43,7 +43,7 @@ document.getElementById("login-btn")?.addEventListener("click", (e) => {
        signInWithEmailAndPassword(auth, email, password)    
         .then(() => {   
     alert("Login Successful!");  
-     window.location.href = "welcome.html";    
+     window.location.href = "welcome1.html";    
      })    
       .catch((error) => {    
            alert(error.message);     
@@ -55,7 +55,7 @@ document.getElementById("google-btn")?.addEventListener("click", (e) => {
 signInWithPopup(auth, provider)  
     .then(() => {     
 alert("Login Successful!");   
- window.location.href = "welcome.html"; 
+ window.location.href = "welcome1.html"; 
     })     
 .catch((error) => {      
  alert(error.message); 
@@ -76,11 +76,11 @@ alert("Login Successful!");
 
  // Show User Email on Welcome Page 
  onAuthStateChanged(auth, (user) => { 
-if (user && window.location.pathname.includes("welcome.html"))
+if (user && window.location.pathname.includes("welcome1.html"))
  {    
  document.getElementById("user-email").textContent = user.email; 
  }
-  else if (!user && window.location.pathname.includes("welcome.html"))
+  else if (!user && window.location.pathname.includes("welcome1.html"))
    {    
      
     window.location.href = "index.html"; 
